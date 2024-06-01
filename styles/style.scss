@@ -1,5 +1,5 @@
 $colors:(
-    "green": hsl(75,94%,57),
+    "green": hsl(75,94%,57%),
     "white": hsl(0,0%,100%),
     "grey": hsl(0,0%,20%),
     "darkGrey": hsl(0,0%,12%),
@@ -15,4 +15,115 @@ $fontWeight: (
 
 );
 
+body{
+    font-family: $fontFamily;
+    background-color: map-get($colors,"offBlack" );
+    color: map-get($colors, "white" );
+    font-weight: map-get($fontWeight, "medium" );
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+};
 
+p{
+    margin: 0;
+    padding: 0;
+    padding-top: 8px;
+    
+    display: inline;
+    text-align: center;
+}
+.container{
+    background-color: map-get($colors, "darkGrey" );
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+    justify-content: center;
+    align-items: center;
+    
+    
+    margin-top: 100px;
+    border-radius: 10px;
+    margin-bottom: 100px;
+
+    
+    
+    img{
+        border-radius: 50%;
+        width: 75px;
+        margin-top: 40px;
+        margin-bottom: 30px;
+        
+    };
+    .name{
+        font-weight: map-get($fontWeight, "bold" );
+        font-size: large;
+        margin-bottom: 10px;
+    };
+    .location{
+        font-weight: map-get($fontWeight, "medium");
+        font-size: smaller;
+        color: map-get($colors, 'green' );
+        margin-bottom: 20px;
+    };
+    title{
+        font-weight: 200;
+        color: map-get($colors, "white" );
+        font-size: smaller;
+
+    };
+    .github{
+        background-color: map-get($colors, "grey" );
+        height: 30px;
+        width: 300px;
+        display: flex;
+        justify-content: center;
+        border-radius: 6px;
+        margin-bottom: 10px;
+        margin-top: 20px;
+    };
+    .frontendMentor{
+        background-color: map-get($colors, "grey" );
+        height: 30px;
+        width: 300px;
+        display: flex;
+        justify-content: center;
+        border-radius: 6px;
+        margin-bottom: 10px;
+
+    };
+    .linkedIn{
+        background-color: map-get($colors, "grey");
+        height: 30px;
+        width: 300px;
+        display: flex;
+        justify-content: center;
+        border-radius: 6px;
+        margin-bottom: 10px;
+
+    };
+    .twitter{
+        background-color: map-get($colors, "grey" );
+        height: 30px;
+        width: 300px;
+        display: flex;
+        justify-content: center;
+        border-radius: 6px;
+        margin-bottom: 10px;
+
+    };
+    .instagram{
+        background-color: map-get($colors, "grey" );
+        height: 30px;
+        width: 300px;
+        display: flex;
+        justify-content: center;
+        border-radius: 6px;
+        margin-bottom: 30px;
+
+    }
+
+}
