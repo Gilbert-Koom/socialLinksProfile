@@ -95,4 +95,13 @@ p {
   justify-content: center;
   border-radius: 6px;
   margin-bottom: 30px;
+}
+
+.instagram:active, .twitter:active, .github:active, .frontendMentor:active, .linkedIn:active {
+  background-color: hsl(75, 94%, 57%);
+  color: hsl(0, 0%, 8%);
+}
+
+.instagram, .frontendMentor, .github, .linkedIn, .twitter {
+  transition-timing-function: linear;
 }/*# sourceMappingURL=style.css.map */
